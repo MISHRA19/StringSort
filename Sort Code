@@ -1,0 +1,15 @@
+def sort_expr(expr):
+    lst=[]
+    lst=expr.split(" ")
+    print("original list:",lst)
+    # Rule is to keep the case formats of the string component while sorting irrespective of case
+    new=sorted(lst,key=str.lower)
+    return new
+
+
+print("Sorted List:",sort_expr("apple Xmas ORANGE"))
+
+Output:
+
+original list: ['apple', 'Xmas', 'ORANGE']
+Sorted List: ['apple', 'ORANGE', 'Xmas']
